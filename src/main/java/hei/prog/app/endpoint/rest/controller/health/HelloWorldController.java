@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @AllArgsConstructor
 public class HelloWorldController {
-    HelloWorldService helloWorldService;
+  HelloWorldService helloWorldService;
 
-    @GetMapping("/hello")
-    ResponseEntity<String> hello() {
-        return new ResponseEntity<>(helloWorldService.sayHello(), HttpStatusCode.valueOf(200));
-    }
+  @GetMapping("/hello")
+  ResponseEntity<String> hello() {
+    return new ResponseEntity<>(helloWorldService.sayHello(), HttpStatusCode.valueOf(200));
+  }
 }
